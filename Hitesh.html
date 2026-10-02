@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Sis 🎂</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff5f7e;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#surprise {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.balloon {
+    position: fixed;
+    bottom: -80px;
+    font-size: 45px;
+    animation: float 7s linear infinite;
+}
+
+.b1 { left: 10%; }
+.b2 { left: 35%; animation-delay: 2s; }
+.b3 { left: 65%; animation-delay: 4s; }
+.b4 { left: 85%; animation-delay: 1s; }
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-110vh);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="balloon b1">🎈</div>
+<div class="balloon b2">🎈</div>
+<div class="balloon b3">🎈</div>
+<div class="balloon b4">🎈</div>
+
+<div class="container">
+
+<h1>🎂 Happy Birthday! 🎉</h1>
+
+<h2>To My Amazing Sister ❤️</h2>
+
+<p>
+Happy Birthday to the best sister ever! 🥳
+<br><br>
+Thank you for all the laughs, memories
+and crazy moments.
+<br><br>
+I hope your day is filled with happiness,
+love and lots of cake! 🎂✨
+</p>
+
+<button id="surpriseBtn">
+🎁 Open Your Surprise
+</button>
+
+<div id="surprise">
+💖 SURPRISE! 💖
+<br><br>
+You are not just my sister,
+you are one of my favourite people! 🥰
+<br><br>
+Have the most amazing birthday! 🎂🎉
+</div>
+
+</div>
+
+<script>
+const button = document.getElementById("surpriseBtn");
+const surprise = document.getElementById("surprise");
+
+button.addEventListener("click", function() {
+    surprise.style.display = "block";
+    button.style.display = "none";
+});
+</script>
+
+</body>
+</html>
